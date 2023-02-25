@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font: 20px Arial, sans-serif;
+      }
+      div > div > img {
+        width: 500px;
+      }
+
+      #highlight {
+        top: 40px;
+        font-size: 60px;
+        margin: 0;
+      }
+      #tagline {
+        font-size: 30px;
+      }
+
+      .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .navlink {
+        display: inline-block;
+        flex-basis: 40%;
+        padding: 40px;
+      }
+      .navlink >a {
+        text-decoration: none;
+        color: black;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbutton {
+        display: none !important;
+      }
+      .content {
+        color: white;
+        font: 40px Arial, sans-serif;
+        padding: 50px;
+        padding-top: 180px;
+        padding-left: 70px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.8) 100%
+          ),
+          url("https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+        background-size: cover;
+        background-position: 50%;
+        height: 500px;
+      }
+      .contactus {
+        font-size: 25px;
+        font-family: monospace;
+        border-radius: 5%;
+        margin-top: 0;
+        padding: 10px 30px;
+        text-align: center;
+        transition: width 3.5s, height 6.5s;
+      }
+      .contactus:hover {
+        background-color: rgb(221, 215, 215);
+      }
+      #valuable-text-container {
+        text-align: center;
+        font-size: 30px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+      }
+      .card-title {
+        text-align: center;
+        font-size: 25px;
+        margin: 25px;
+      }
+      .card-text {
+        text-align: center;
+      }
+      .card-text > a {
+        text-decoration: none;
+      }
+      .contactus > a {
+        text-decoration: none;
+        color: black;
+      }
+      .picture {
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+      }
+      #short-box-button{
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+      #short-box-button > a{
+        text-decoration: none;
+        color: black;
+      }
+      h3{
+        font-size: 30px;
+      }
+      #link{
+        text-decoration:none;
+        color: white;
+      }
+      @media (max-width: 320px) {
+        .navlink {
+          display: none;
+        }
+      }
+      @media (min-width: 320px) {
+        .navbutton {
+          display: inline-block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <a href="https://rocketman.learnwagtail.com">
+          <img
+            style="padding: 40px"
+            src="https://rocketman.learnwagtail.com/static/images/logo.24c25970fb09.png"
+        /></a>
+        <ul class="navbar">
+          <li class="navlink" id="services"><a href="https://rocketman.learnwagtail.com/services/">SERVICES</a></li>
+          <li class="navlink" id="contact"><a href="https://rocketman.learnwagtail.com/contact/">CONTACT</a></li>
+          <li class="navlink" id="wagtail-course"><a href="https://learnwagtail.com/wagtail-for-beginners/">WAGTAIL COURSE</a></li>
+        </ul>
+        <button class="navbutton">...</button>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="content">
+        <p id="highlight">Supreme Rocket</p>
+        <p id="highlight">Maintenance</p>
+        <p id="tagline">
+          Your rocket is your $1,000,000,000 baby. We get that.
+        </p>
+        <br />
+        <button class="contactus"><a href="https://rocketman.learnwagtail.com/contact/">CONTACT US</a></button>
+      </div>
+    </div>
+    <div id="valuable-text-container">
+      <p id="valuable">
+        Your rocket is valuable. Let the professionals work on it.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 40px">
+      <div
+        class="cards"
+        style="
+          margin: 40px;
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid black;
+        "
+      >
+        <img
+          src="https://rocketman.learnwagtail.com/media/images/nasa-n463SoeSiVY-unsplash.2e16d0ba.fill-570x370.jpg"
+        />
+        <div style="display: inline-block">
+          <h5 class="card-title">Rockets are cool!</h5>
+          <p class="card-text">
+            Especially when you see photos like this one 🤤
+          </p>
+          <p class="card-text">
+            <a href="https://rocketman.learnwagtail.com/services/"> VIEW SERVICES</a>
+          </p>
+        </div>
+      </div>
+      <div
+        class="cards"
+        style="
+          margin: 40px;
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid black;
+        "
+      >
+        <img
+          src="https://rocketman.learnwagtail.com/media/images/hello-i-m-nik-8yCmQODY2SY-unsplash.2e16d0ba.fill-570x370.jpg"
+        />
+        <div style="display: inline-block">
+          <h5 class="card-title"> It&#39;s not a toy</h5>
+          <p class="card-text">
+            Or maybe you&#39;re Jeff Bezos.. and rockets are your toys!
+          </p>
+          <p class="card-text">
+            <a href="https://rocketman.learnwagtail.com/contact/"> CONTACT US</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content: center; margin: 40px; padding: 40px;">
+        <div >
+            <img style="width: 650px; height:600px;"
+            src="https://rocketman.learnwagtail.com/media/images/spacex-MEW1f-yu2KI-unsplash.2e16d0ba.fill-786x552.jpg"
+          />
+          </div>
+          <div style="background-color: rgb(54, 53, 53); color: white; height: 250px; width: 400px; left: 400px; text-align: center; padding: 20px; float: right">
+            <h3 class="">Self Landing Rocket</h3>
+
+            <p class="">
+              Probably the coolest thing evar!!1 We can program this for you.
+            </p>
+
+            <button id="short-box-button">
+                <a
+                  href="https://rocketman.learnwagtail.com/services/programming/"
+                  class=""
+                  style="padding-left: 3rem; padding-right: 3rem"
+                >
+                  MORE DETAILS
+                </a>
+            </div>
+    </div>
+
+    <div style="display:flex; justify-content: center; margin: 40px; padding: 40px;">
+        
+          <div style="background-color:rgb(54, 53, 53); color: white; height: 250px; width: 400px; left: 400px; text-align: center; padding: 20px; float: right">
+            <h3 class="">We&#39;ll clean your rocket</h3>
+
+            <p class="">
+                This image has nothing to do with cleaning. But it&#39;s kind of neat still.
+            </p>
+
+            <button id="short-box-button">
+                <a
+                  href="https://rocketman.learnwagtail.com/services/cleaning/"
+                  class=""
+                  style="padding-left: 3rem; padding-right: 3rem"
+                >
+                  MORE DETAILS
+                </a>
+          </div>
+          <div >
+            <img style="width: 650px; height:600px;"
+            src="https://rocketman.learnwagtail.com/media/images/pablo-guerrero-pGXUwHZQ5eI-unsplas.2e16d0ba.fill-786x552.jpg"
+          />
+          </div>
+    </div>
+
+    <div style="display:flex; justify-content: center; margin: 40px; padding: 40px;">
+        <div >
+            <img style="width: 650px; height:600px;"
+            src="https://rocketman.learnwagtail.com/media/images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-786x552.jpg"
+          />
+          </div>
+          <div style="background-color: rgb(54, 53, 53); color: white; height: 280px; width: 400px; left: 400px; text-align: center; padding: 20px; float: right">
+            <h3 class="">Rockets are gas guzzlers</h3>
+
+            <p class="">
+                If you think gas is expensive now.. think about rocket prices! Luckily, we water our gas down to give you more bang for your buck.
+            </p>
+
+            <button id="short-box-button">
+                <a
+                  href="https://rocketman.learnwagtail.com/services/fuelling/"
+                  class=""
+                  style="padding-left: 3rem; padding-right: 3rem"
+                >
+                  MORE DETAILS
+                </a>
+          </div>
+    </div>
+    <div class="skynet" style="display:flex;justify-content:center;flex-direction:column;align-items:center;padding: 30px;margin-bottom:40px">
+        <div style="padding: 30px; font-size: 30px; ">
+        We've also partnered with Skynet to maintain humanoid robotics.
+        </div>
+        <div>
+            <button style="background-color:blueviolet; font-size: 20px; padding: 10px 30px;color: white; border:none;;"> <a href="https://rocketman.learnwagtail.com/contact/" style="text-decoration:none; color:white">CONTACT US</a></button>
+        </div>
+    </div>
+
+    <div sytle="margin-bottom: 80px;">
+        <div style="padding: 0px 150px ; text-align:center;">
+            <h1 style="font-size:30px;">Our rockets were so clean they blinded over 1,000 people when they watched our launch. Thanks Rocketman!</h1>
+        </div>
+        <div>
+            <p style="text-align:center; margin-bottom: 100px;">— TOTALLY NOT SPACEX 😉</p>
+        </div>
+    </div>
+
+    <div style="display:flex; background-color:blueviolet;flex-direction:row; padding: 60px 80px;padding-bottom:none; color: white; justify-content:center;">
+        <div style="display:flex;flex-direction:column;margin-right: 150px;">
+            <h2 style="font-size: 50px;padding:0px;margin:0px;">We’ll take good care of your rocket.</h2>
+            <p style="font-size: 30px;padding:30px 0px; margin:0px;">We’ll treat your rocket as if it’s our own. Our standards are higher than the ISS's altitude. We also enjoy test driving your rocket before giving it back 😱</p>
+        </div>
+        <div style="display:flex;align-items:center;">
+            <button style="background-color: white;padding: 10px 30px;  font-size: 20px; border:none; "><a href="https://rocketman.learnwagtail.com/contact/" style="text-decoration:none; color:black">CONTACT</a> </button>
+        </div>
+    </div>
+    <div class="footer" style="display:flex;flex-direction:row;background-color:black;color:white;justify-content:space-around">
+        <div id="footer1">
+            
+            <p style="font-size: 15px; color:gray">LINKS</p>
+            <p><a href="" id="link" >Serivces</a></p>
+            <p></p><a href="" id="link">Contact</a></p>
+            <p></p><a href="" id="link">Wagtail Course</a></p>
+
+        </div>
+        <div id="footer2">
+            <p style="font-size: 15px; color: gray">CONTACT US</p>
+            <p style="font-size: 15px;">Contact us anytime at<br /><a href="" id="link">
+                gary@totallyfakeemail.com</a></p>
+            <p style="font-size: 15px;">* All images from <br /><a href="" id="link">unsplash.com</a></p>
+        </div>
+        <div id="footer3">
+            <p style="font-size: 15px; color:gray">HOURS</p>
+            <p style="font-size:15px; ">Monday - Friday</p>
+            <p style="font-size: 15px;">9am - 5pm</p>
+
+        </div>
+        <div id="footer4">
+            <p><a href="">
+                <img src="https://rocketman.learnwagtail.com/static/images/twitter.547e4102088e.svg">
+            </a>
+            <a href="">
+                <img src="https://rocketman.learnwagtail.com/static/images/youtube.4116506a463c.svg">
+            </a></p>
+            <p>© 2023 Rocketman</p>
+
+        </div>
+    </div>
+
+  </body>
+</html>
